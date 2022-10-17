@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.label {
+    display: block;
+    padding: 30px;
+    font-weight: 900;
+    font-size: 40px;
+    color: #83888F;
+}
+
+.box {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/free-icon-down-arrow-2985150.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.inp:checked~.box {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/free-icon-up-arrrows-5053186.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -8px;
+
+}
+
+.box__list {
+    display: none;
+}
+
+.inp:checked~.box .box__list {
+    display: flex;
+    position: absolute;
+    right: -5px;
+    top: 50px;
+}
+
+
+.box__text {
+    width: 190px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #F4F1EB;
+}
+
+.one {
+    background-color: #F4F1EB;
+}
+
+.two {
+    background-color: #0E8784;
+}
+
+.three {
+    background-color: #FDD6BA;
+}
+
+.box__title {
+    padding: 16px 100px 16px 20px;
+    font-weight: 900;
+    font-size: 24px;
+    color: #333D4B;
+}
+
+.title__two {
+    color: #fff;
+}
+
+.box__desc {
+    width: 172px;
+    padding: 5px 20px 50px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333D4B;
+}
